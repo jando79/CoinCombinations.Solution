@@ -18,5 +18,11 @@ namespace CoinCombinations.Tests
     {
       Assert.AreEqual("1 penny", CoinCombinator.ConvertToCoinString(0.01));
     }
+
+    [TestMethod]
+    public void ConvertToCoinString_ReturnsTwoQuartersForFiftyCents_String()
+    {
+      Assert.AreEqual("2 quarters", CoinCombinator.ConvertToCoinString(0.50));
+    }
   }
 }
